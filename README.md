@@ -19,7 +19,7 @@ The repository is organized as follows:
 * **`model/`**: Contains the core neural network architectures.
   * `net.py`: Defines the GC-UNO architecture and physics-informed loss calculations.
 * **`train/`**: Contains the training loops and logic.
-  * `train_gc_uno.py`: Manages the data-driven pre-training and physics-informed autoregressive training phases.
+  * `gc_uno.py`: Manages the data-driven pre-training and physics-informed autoregressive training phases.
 * **`src/`**: Contains configuration files and utilities.
   * `config.py`: Hyperparameters, data paths, and physical constraint weights.
   * *Other utility scripts.*
@@ -32,14 +32,19 @@ To execute the model, run the main entry script located in the root directory:
 python run_gc_uno.py
 ```
 
+------
+
 ## 🙏 Acknowledgments
 
-This project is built upon and greatly benefits from the following open-source resources and datasets. We express our sincere gratitude to the original authors and institutions for their contributions to the community:
+This project is built upon and greatly benefits from the following open-source resources, models, and datasets. We express our sincere gratitude to the original authors and institutions
 
 * **Fourier Neural Operator (FNO)**
-  * **Codebase:** [neuraloperator/neuraloperator](https://github.com/neuraloperator/neuraloperator)
-  * **Paper:** Z. Li *et al.*, "Fourier Neural Operator for Parametric Partial Differential Equations," 2020, arXiv. DOI: [10.48550/ARXIV.2010.08895](https://doi.org/10.48550/ARXIV.2010.08895)
+    * **Codebase** [neuraloperator/neuraloperator](https://github.com/neuraloperator/neuraloperator)
+    * **Paper** Z. Li *et al.*, "Fourier Neural Operator for Parametric Partial Differential Equations," 2020, arXiv. DOI [10.48550/ARXIV.2010.08895](https://doi.org/10.48550/ARXIV.2010.08895)
+
+* **U-shaped Neural Operators (U-NO)**
+    * **Paper** M. A. Rahman *et al.*, "U-NO: U-shaped Neural Operators," 2022, arXiv. DOI [10.48550/ARXIV.2204.11127](https://doi.org/10.48550/ARXIV.2204.11127)
 
 * **ISEE NLFFF Database**
-  * **Dataset:** [ISEE Database for Nonlinear Force-Free Field of Solar Active Regions](https://hinode.isee.nagoya-u.ac.jp/nlfff_database/)
-  * **Citation:** K. Kusano, H. Iijima, T. Kaneko, S. Masuda, T. Iju, and S. Inoue, "ISEE Database for Nonlinear Force-Free Field of Solar Active Regions," Hinode Science Center, Institute for Space-Earth Environmental Research, Nagoya University, 2021.
+    * **Dataset** [ISEE Database for Nonlinear Force-Free Field of Solar Active Regions](https://hinode.isee.nagoya-u.ac.jp/nlfff_database/)
+    * **Citation** K. Kusano, H. Iijima, T. Kaneko, S. Masuda, T. Iju, and S. Inoue, "ISEE Database for Nonlinear Force-Free Field of Solar Active Regions," Hinode Science Center, Institute for Space-Earth Environmental Research, Nagoya University, 2021.
