@@ -1,0 +1,16 @@
+# 忽略 Mac 系统文件
+echo ".DS_Store" >> .gitignore
+echo "*/.DS_Store" >> .gitignore
+
+# 忽略 Python 缓存
+echo "__pycache__/" >> .gitignore
+echo "*.py[cod]" >> .gitignore
+
+# 忽略大型权重文件和本地数据（非常重要！）
+echo "weight/*.pth" >> .gitignore
+echo "data/ISEE/all_h32/*.dat" >> .gitignore
+echo "result/*.mat" >> .gitignore
+
+# 忽略编辑器配置
+echo ".idea/" >> .gitignore
+echo ".vscode/" >> .gitignore
